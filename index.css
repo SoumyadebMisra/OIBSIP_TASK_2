@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.intro{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: aliceblue;
+    height: 750px;
+}
+.intro__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    font-size: 20px;
+}
+.intro__text__name{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 4.5rem
+}
+.intro__text__yr{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2rem;
+    margin-top: 15px;
+}
+.intro__text__quote{
+    font-family: 'Comfortaa', cursive;
+    margin-top: 50px;
+}
+
+.intro__img{
+    margin-bottom: 0px;
+    margin-top: 80px;
+    width: 100%;
+    height: auto;
+    max-width: 38vw;
+    min-width: 400px;
+}
+.bio{
+    margin:0;
+    background-color: rgba(217, 222, 226, 0.842);
+    max-height: 100%;
+    overflow: hidden;
+    text-align:justify;
+}
+.bio h1{
+    margin: 20px;
+    margin-bottom: 0px;
+    margin-top: 30px;
+}
+.bio__cont{
+    margin-top: 10px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100%;
+    overflow-y: scroll;
+}
+.bio__cont::-webkit-scrollbar{
+    display: none;
+}
+
+.bio__text{
+    padding: 30px;
+    margin-left: 10px;
+    margin-right: 60px;
+    vertical-align: middle;
+    box-shadow: 5px 5px 60px rgb(115, 118, 126);
+
+}
+.bio__text{
+    font-family: 'Noto Sans', sans-serif;
+}
+.bio h1{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 3rem;
+    margin: 30px 0px 30px 20px;
+}
+.bio__text p{
+    margin-bottom: 10px;
+}
+.bio__text p:first-child{
+    margin-bottom: 30px;
+}
+
+.bio__text__str{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.4rem;
+}
+.bio__img{
+    float: left;
+    width: 100%;
+    height: auto;
+    max-width: 30vw;
+    min-width: 300px;
+    box-shadow: 2px 2px 20px black;
+    margin: 20px 25px 20px 0px;
+}
+
+.legacy{
+    margin:0;
+    background-color: rgba(187, 189, 190, 0.842);
+    max-height: 100%;
+    overflow: hidden;
+    text-align:justify;
+}
+.legacy h1{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 3rem;
+    margin: 30px 0px 30px 20px;
+}
+.legacy__cont{
+    padding-right: 30px;
+    padding-left: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100%;
+    overflow-y: scroll;
+}
+.legacy__cont::-webkit-scrollbar{
+    display: none;
+}
+.legacy__text{
+    margin-left: 10px;
+    margin-right: 60px;
+    vertical-align: middle;
+    box-shadow: 5px 5px 80px rgb(71, 68, 68);
+    padding: 30px;
+}
+.legacy__text{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.legacy__text p{
+    margin-bottom: 10px;
+}
+.legacy__text p:first-child{
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.legacy__img__1{
+    margin-right: 10px;
+    width: 100%;
+    height: auto;
+    max-width: 60vw;
+    min-width: 400px;
+    box-shadow: 2px 2px 20px black;
+    margin: 20px 0px 50px 10px;
+}
+
+@media screen and (max-width: 1050px) {
+    .intro{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .intro__text{
+        font-size: 16px;
+
+    }
+    .intro__text__name{
+        font-size: 3rem;
+    }
+    .intro__text div{
+        margin: 10px;
+    }
+    .bio {
+      height: 95vh; /* Reduce the height of the section for smaller screens */
+    }
+    .bio__cont{
+        flex-direction: column;
+        height: 200vh;
+    }
+    .bio__text{
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-bottom: 100px;
+    }
+    .bio__img{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .legacy {
+        height: 95vh; /* Reduce the height of the section for smaller screens */
+      }
+      .legacy__cont{
+          flex-direction: column;
+      }
+      .legacy__text{
+          margin-right: 20px;
+          margin-left: 20px;
+      }
+      .legacy__img__1{
+        margin-top: 30px;
+
+      }
+      .bio__cont::-webkit-scrollbar{
+        display: block;
+    }
+    .legacy__cont::-webkit-scrollbar{
+        display: block;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .intro__text__name{
+        font-size: 2rem;
+    }
+    .bio__img{
+        margin-top: 50px;
+    }
+    .legacy {
+      height: 100vh; /* Further reduce the height of the section for even smaller screens */
+    }
+    .legacy__img{
+        float: none;
+    }
+  }
+
+  .foot{
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+  }
